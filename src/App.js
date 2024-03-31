@@ -31,7 +31,7 @@ function App() {
     >
       <div className="">
         somehting
-        <Home name={"surag"}>this is child of home and edited for testing again here</Home>
+        <Home name={"surag"}>this is child of home and edited for testing again here with</Home>
         {/* <Sample/> */}
         <Search />
         <ArtistIndex/>
