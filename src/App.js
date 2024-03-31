@@ -36,7 +36,7 @@ function App() {
         <Search />
         <ArtistIndex/>
         <Test/>
-        <div>dev editing second</div>
+        <div>dev editing second third</div>
       </div>
     </Profiler>
   );
