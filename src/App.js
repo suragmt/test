@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import Home from "./Home";
+import Sample from "./Sample";
+import Search from "./Search";
+import { Profiler } from "react";
+import ArtistIndex from './ArtistIndex'
+import Test from "./Test";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Profiler
+     id="app"
+      onRender={(
+        id,
+        phase,
+        actualDuration,
+        baseDuration,
+        startTime,
+        commitTime
+      ) => {
+        // console.log(
+        //   "profiler",
+        //   id,
+        //   phase,
+        //   actualDuration,
+        //   baseDuration,
+        //   startTime,
+        //   commitTime
+        // );
+      }}
+    >
+      <div className="">
+        somehting
+        <Home name={"surag"}>this is child of home and edited for testing</Home>
+        {/* <Sample/> */}
+        <Search />
+        <ArtistIndex/>
+        <Test/>
+      </div>
+    </Profiler>
   );
 }
 
